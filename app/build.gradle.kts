@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.jetpack.room)
 }
 
 android {
@@ -45,6 +46,9 @@ android {
     }
     hilt {
         enableAggregatingTask = true
+    }
+    room {
+        schemaDirectory("$projectDir/schemas")
     }
 }
 

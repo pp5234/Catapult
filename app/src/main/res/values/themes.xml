@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Catapult" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Catapult" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Catapult.Main</item>
+    </style>
+
+
+    <style name="Theme.Catapult.Main" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
 </resources>
